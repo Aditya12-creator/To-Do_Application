@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+    <section id="inputNotes">
+        <form>
+            <fieldset>
+            <legend>Note</legend>
+            <input type="text" name="title" placeholder="Please enter a title"/>
+            <textarea name ="description" placeholder="Please enter a description"></textarea>
+            <input type="submit" id="submit">
+            </fieldset>
+        </form>
+    </section>
+    <section id="displayNotes">
+        <div>
+            <title></title>
+            <description></description>
+        </div>
+    </section>
+    <script src="./script.js"></script>
 </body>
 </html>

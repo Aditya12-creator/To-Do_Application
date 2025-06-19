@@ -1,0 +1,153 @@
+/* General reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Form section */
+#inputNotes {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border: 1px solid #888;
+    outline: none;
+}
+
+#submit {
+    background-color: #6b705c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #a5a58d;
+}
+
+/* Notes display section */
+#displayNotes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Note card styling */
+.notes {
+    background-color: #fff8f0;
+    border-radius: 16px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.notes:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.notes h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.notes p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* Buttons inside note */
+.notes button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+}
+
+.delete-btn {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #d62828;
+}
+
+.update-btn {
+    background-color: #48cae4;
+    color: white;
+}
+
+.update-btn:hover {
+    background-color: #0077b6;
+}
+
+.ok-btn {
+    background-color: #90be6d;
+    color: white;
+}
+
+.ok-btn:hover {
+    background-color: #588157;
+}
+
+/* Hidden input fields for editing */
+.notes input[type="text"],
+.notes textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    padding: 8px;
+}
